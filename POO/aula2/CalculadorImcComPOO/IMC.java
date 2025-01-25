@@ -6,6 +6,7 @@ class IMC{
     }
 
     public String getCategoria(){
+        // TODO obter categoria de acordo com o IMC
         return "categoria";
     }
 }

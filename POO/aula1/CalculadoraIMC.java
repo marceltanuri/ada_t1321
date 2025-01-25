@@ -1,5 +1,6 @@
-public class CalculadoraIMC {
-    public static void main(String[] args) {
+class CalculadoraIMC {
+    static void main(String[] args) {
+        
         String nome = null;
         double peso = 0.0;
         double altura = 0.0;
@@ -20,7 +21,11 @@ public class CalculadoraIMC {
         }
 
         double imc = peso / (altura * altura);
+        imprimir(nome, peso, altura, imc);
+       
+    }
 
+    static void imprimir(String nome, double peso, double altura, double imc){
         System.out.println("Paciente: " + nome);
         System.out.println("Peso: " + String.format("%.2f", peso) + " kg");
         System.out.println("Altura: " + String.format("%.2f", altura) + " m");

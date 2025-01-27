@@ -1,0 +1,7 @@
+class CalculadoraDeSalario{
+
+    double calculaDesconto(Funcionario funcionario){
+        // TODO implementar calculo do desconto
+        return 0.0;
+    }
+}

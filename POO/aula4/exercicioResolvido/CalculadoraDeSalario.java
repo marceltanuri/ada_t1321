@@ -1,20 +1,21 @@
-public class CalculadoraDeSalario {
 
-    public double calculaDesconto(Funcionario funcionario) {
+class CalculadoraDeSalario {
+
+    double calculaDesconto(Funcionario funcionario) {
         double salarioBase = funcionario.dadosContratuais.salarioBase;
         boolean valeTransporte = funcionario.dadosContratuais.valeTransporte;
         double desconto = 0.0;
 
-        if (salarioBase <= 2000.00) {
-            desconto = salarioBase * 0.10;
-        } else if (salarioBase <= 5000.00) {
-            desconto = salarioBase * 0.15;
+        if (salarioBase <= TabelaDeValoresDeDesconto.SALARIO_ESCALAO_1) { 
+            desconto = salarioBase * TabelaDeValoresDeDesconto.DESCONTO_ESCALAO_1;
+        } else if (salarioBase <= TabelaDeValoresDeDesconto.SALARIO_ESCALAO_2) {
+            desconto = salarioBase * TabelaDeValoresDeDesconto.DESCONTO_ESCALAO_2;
         } else {
-            desconto = salarioBase * 0.20;
+            desconto = salarioBase * TabelaDeValoresDeDesconto.DESCONTO_ESCALAO_3;
         }
 
-        if (valeTransporte && salarioBase > 2500.00) {
-            desconto += salarioBase * 0.06;
+        if (valeTransporte && salarioBase > TabelaDeValoresDeDesconto.SALARIO_LIMITE_DESCONTO_VT) {
+            desconto += salarioBase * TabelaDeValoresDeDesconto.DESCONTO_VT;
         }
 
         return desconto;

@@ -1,6 +1,3 @@
-// variaveis de instancia
-// variaveis de metodo
-
 class App{
     public static void main(String... a){
 

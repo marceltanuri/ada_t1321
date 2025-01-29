@@ -51,3 +51,8 @@ public class CalculadoraDeSalarioTest {
         }
     }
 }
+
+// Abstração
+// Encapsulamento
+// Herança
+// Polimorfismo

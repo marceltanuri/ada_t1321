@@ -1,7 +1,9 @@
 class App {
 
-    public static void main(String[] args) {
-         Livro livro = new Livro("Poesias de um programador", "Marcel Tanuri");
+    static void main(String[] args) {
+         Livro livro = new Livro();
+         livro.autor = "Marcel Tanuri";
+         livro.titulo = "O vendedor de códigos";
 
           Livro outroLivro = new Livro() ;      ;
 

@@ -2,7 +2,7 @@ class Locador {
 
     String nome;
 
-    String cpf; // poderia ser Integer?
+    String cpf; // poderia ser Integer? 00044158454
 
     String dataDeNascimento;
 

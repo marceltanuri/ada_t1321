@@ -10,7 +10,7 @@ Uma empresa deseja automatizar o cálculo de férias de seus funcionários. No e
    - Tem direito a **30 dias de férias** a cada 12 meses trabalhados.  
    - O valor das férias é calculado da seguinte forma:  
      ```
-     Valor das férias = Salário mensal + (Salário mensal / 3) - INSS (8%)
+     Valor das férias = Salário mensal + (Salário mensal / 3) - INSS (8% do valor total das férias)
      ```  
 
 2. **Funcionário PJ** (Prestador de serviço)  
@@ -49,7 +49,7 @@ Salário: 3000.00
 ```  
 Funcionário: João  
 Tipo: CLT  
-Valor das férias: R$ 3.660,00  
+Valor das férias: R$ 3.680,00  
 ```
 
 ---
